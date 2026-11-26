@@ -228,7 +228,8 @@ console.log(count,selected.rows[2].cells[0].innerText,selectInput.children[2].va
 
 
 const submit = () =>{
-	textInput.focus();
+		if (window.innerWidth > 768) {
+    textInput.focus()}
 	
 	if (textInput.value && numberInput.value && 
 	selectInput.options[selectInput.selectedIndex].value && creditiIniziali.value !== ""){

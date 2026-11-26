@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Prova</title>
+  <link rel="stylesheet" href="Styles2.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <body>
+ <h1>FantaSquad</h1>
+ <div id="container">
+ <div id="math-div">
+    <label>Portieri:
+	<div id="math-p" class="math-div"></div></label>
+	<label>Difensori:
+	<div id="math-d" class="math-div"></div></label>	
+   <label>Centrocampisti:
+	<div id="math-c" class="math-div"></div></label>
+	<label>Attaccanti:
+	<div id="math-a" class="math-div"></div></label>
+   <label>Crediti Residui:
+   <div id ="crediti-residui" class="math-div"></div></label></div>
+ <div id="input-div">
+ <label>Crediti Iniziali:
+	<input id="crediti-iniziali" type="number" placeholder="Inserisci i crediti iniziali" style="width: 80px" onchange="creditTransform()"></label>
+ <label>Giocatore:
+ <input type="text" id="text-input" placeholder="Giocatore" autofocus></label>
+ <label>Prezzo:
+ <input type="number" id="number-input" placeholder="Prezzo"></label>
+ <label>Ruoli:
+ <select id="sel" onchange="selectChange()">
+    <option value="" >Seleziona un ruolo</option>
+    <option value="portieri">Portieri</option>
+	<option value="difensori">Difensori</option>
+    <option value="centrocampisti">Centrocampisti</option>
+    <option value="attaccanti">Attaccanti</option>
+ </select></label>
+ <label><button type"button" id="submit-btn">Submit</button></label>
+  </div>
+  </div>
+<br>
+<main id="main">
+<button id="modifica-tab" class="modifica-tab">Modifica tabella</button>
+
+  <div class="main-table">
+   <fieldset id="field-p">
+   <legend id="legend-p">Portieri</legend>
+  <table id="table-portieri">
+   <tr>
+    <th>Giocatore</th>
+    <th>Costo</th>
+   </tr>
+</table>
+  </fieldset>
+  
+  <fieldset id="field-d">
+   <legend id="legend-d">Difensori</legend>
+  <table id="table-difensori">
+   <tr>
+    <th>Giocatore</th>
+    <th>Costo</th>
+   </tr>
+</table>
+  </fieldset>
+  
+  <fieldset id="field-c">
+   <legend id="legend-c">Centrocampisti</legend>
+  <table id="table-centrocampisti">
+   <tr>
+    <th>Giocatore</th>
+    <th>Costo</th>
+   </tr>
+</table>
+  </fieldset>
+  
+  <fieldset id="field-a">
+   <legend id="legend-a">Attaccanti</legend>
+  <table id="table-attaccanti">
+   <tr>
+    <th>Giocatore</th>
+    <th>Costo</th>
+   </tr>
+</table>
+  </fieldset></div>
+  </main>
+  
+  
+  <dialog id="dialog-mod">
+  <div class="dialog-div">
+  <p class="dialog-p" id="dialog-p"></p>
+   <input  id="dialog-input">
+   <div class="button-div">
+   <button type="button" id="dialog-ok" class="dialog-button">Ok</button>
+   <button type="button" id="dialog-annulla" class="dialog-button">Annulla</button>
+   <button type="button" id="dialog-reset" class="dialog-button">Cancella</button>
+   </div>
+  </dialog>
+   <dialog id="dialog-data">
+  <div class="dialog-div">
+  <p class="dialog-data-p" id="dialog-p">È stata trovata una sessione in memoria.<br><br>Vuoi cominciare una nuova sessione o caricare la sessione precedente?</p>
+   <div class="button-div button-data-div">
+   <button type="button" id="dialog-new-session" class="dialog-button">Comincia una nuova sessione</button>
+   <button type="button" id="dialog-load-session" class="dialog-button">Carica la sessione precedente</button>
+   </div>
+  </dialog>
+  
+  <dialog id="dialog-sure">
+  <div class="dialog-div">
+  <p class="dialog-data-p" id="dialog-p">Cominciando una nuova sessione, i dati precedenti verranno eliminati.<br><br>Avviare una nuova sessione?
+   <div class="button-div button-sure-div">
+   <button type="button" id="dialog-sure-yes" class="dialog-button">Si</button>
+   <button type="button" id="dialog-sure-no" class="dialog-button">No</button>
+   </div>
+  </dialog>
+  
+  <dialog id="dialog-alert">
+  <div class="dialog-alert">
+   <p id="dialog-alert-p"><</p>
+   <button id="dialog-alert-ok" type="button" class="dialog-button">Ok</button></div>
+   </dialog>
+   
+<script src="Script2.js"></script>
+</body>
+</html>

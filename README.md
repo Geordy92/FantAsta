@@ -1,9 +1,6 @@
 #FantAsta 
 
 Questa applicazione serve per gestire la propria asta del fantacalcio segnando nome e crediti pagati del calciatore. In più fa il conteggio dei crediti residui e quanti crediti sono stati spesi per ogni reparto.
- 
-
-🔗 **Demo Live:** [Inserisci qui il link se il sito è online, altrimenti cancella questa riga]
 
 ---
 

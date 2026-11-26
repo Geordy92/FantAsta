@@ -14,21 +14,6 @@ Questa applicazione serve per gestire la propria asta del fantacalcio segnando n
 
 ---
 
-## 🚀 Come avviare il progetto in locale
-Se vuoi testare il progetto sul tuo computer, segui questi passaggi:
-
-1. Clona la repository:
-   ```bash
-   git clone https://github.com/Geordy92/FantAsta.git
-   ```
-2. Entra nella cartella del progetto:
-   ```bash
-   cd FantAsta
-   ```
-3. [Inserisci qui il comando per avviarlo, es. "Apri il file `index.html` nel browser" oppure "`npm install && npm start`"]
-
----
-
 ## 👤 Autore
 **Andrea Giordani**
 * **Email:** geordy1292@hotmail.it
